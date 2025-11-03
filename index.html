@@ -6,284 +6,35 @@
   <title>Ravi Jain • Technical Lead Portfolio</title>
   <meta name="description" content="Portfolio of Ravi Jain — Technical Lead with ~9.5 years' experience in Java 21, Spring Boot, React, Docker & Cloud." />
   <meta name="theme-color" content="#0ea5e9" />
-  <style>
-    :root {
-      --bg: #0b1220;
-      --panel: #0f172a;
-      --muted: #94a3b8;
-      --text: #e2e8f0;
-      --brand: #22d3ee;
-      --accent: #7c3aed;
-      --chip: #1f2937;
-      --ok: #10b981;
-    }
-    @media (prefers-color-scheme: light) {
-      :root { --bg:#f8fafc; --panel:#ffffff; --muted:#475569; --text:#0f172a; --chip:#f1f5f9; }
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";background:linear-gradient(120deg,var(--bg),#0a0a0a) fixed;color:var(--text);}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:1100px;margin:0 auto;padding:28px}
-
-    /* header */
-    header{position:sticky;top:0;backdrop-filter:saturate(150%) blur(8px);background:color-mix(in srgb, var(--panel) 80%, transparent);border-bottom:1px solid color-mix(in srgb, var(--muted) 25%, transparent)}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
-    .brand .dot{width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 30% 30%, var(--brand), var(--accent));box-shadow:0 0 18px var(--brand)}
-    .actions{display:flex;gap:10px}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid color-mix(in srgb, var(--muted) 25%, transparent);background:linear-gradient(180deg,color-mix(in srgb, var(--panel) 70%, transparent), color-mix(in srgb,#000 15%, transparent));color:var(--text);font-weight:600}
-    .btn:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(0,0,0,.25);text-decoration:none}
-
-    /* hero */
-    .hero{display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:center;margin-top:28px}
-    .avatar{width:170px;height:170px;border-radius:24px;overflow:hidden;border:1px solid color-mix(in srgb, var(--muted) 25%, transparent);background:linear-gradient(135deg, #111827, #0f172a)}
-    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-    h1{font-size:clamp(28px, 2.8vw, 40px);line-height:1.1;margin:0}
-    .subtitle{color:var(--muted);margin-top:6px}
-    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
-    .chip{font-size:14px;background:var(--chip);padding:8px 12px;border-radius:999px;border:1px solid color-mix(in srgb, var(--muted) 20%, transparent)}
-
-    /* sections */
-    section{margin-top:28px}
-    .card{background:linear-gradient(180deg, color-mix(in srgb, var(--panel) 80%, transparent), color-mix(in srgb, #000 12%, transparent));border:1px solid color-mix(in srgb, var(--muted) 25%, transparent);border-radius:16px;padding:20px}
-    h2{font-size:20px;margin:0 0 12px 0;letter-spacing:.3px}
-
-    /* grids */
-    .grid{display:grid;gap:14px}
-    .grid.cols-2{grid-template-columns:repeat(2, 1fr)}
-    .grid.cols-3{grid-template-columns:repeat(3, 1fr)}
-    @media (max-width:900px){.grid.cols-2,.grid.cols-3{grid-template-columns:1fr}}
-
-    /* experience */
-    .xp{display:grid;gap:6px;padding:14px;border-radius:14px;background:color-mix(in srgb, var(--panel) 70%, transparent);border:1px dashed color-mix(in srgb, var(--muted) 25%, transparent)}
-    .xp .role{font-weight:700}
-    .xp .meta{font-size:14px;color:var(--muted)}
-    .xp ul{margin:6px 0 0 18px}
-
-    /* lists */
-    .list{display:grid;gap:10px}
-    .list .item{display:flex;gap:12px;align-items:flex-start}
-    .list .dot{margin-top:7px;width:8px;height:8px;border-radius:50%;background:radial-gradient(circle at 30% 30%, var(--accent), var(--brand));box-shadow:0 0 10px var(--accent)}
-
-    footer{margin:36px 0 24px;color:var(--muted);text-align:center}
-    .small{font-size:12px;color:var(--muted)}
-    .ok{color:var(--ok);font-weight:700}
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="container nav">
       <div class="brand"><span class="dot"></span> Ravi Jain</div>
       <nav class="actions">
-        <a class="btn" href="mailto:ravi.jain1201@gmail.com" aria-label="Email Ravi Jain">✉ Email</a>
-        <a class="btn" href="resume.pdf" download aria-label="Download Resume PDF">⬇ Download Resume</a>
-        <a class="btn" href="#contact" aria-label="Jump to contact">☎ Contact</a>
+        <a class="btn" href="mailto:ravi.jain1201@gmail.com">✉ Email</a>
+        <a class="btn" href="resume.pdf" download>⬇ Download Resume</a>
+        <a class="btn" href="#contact">☎ Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="avatar" aria-hidden="true">
-        <img alt="Portrait of Ravi Jain" src="profile_pic.png" />
-      </div>
-      <div>
-        <h1>Technical Lead • Full‑Stack / Java</h1>
-        <p class="subtitle">Mumbai, 410206 · <a href="tel:+918459153078">+91 84591 53078</a> · <a href="mailto:ravi.jain1201@gmail.com">ravi.jain1201@gmail.com</a></p>
-        <p>Mentoring and leading teams of 8–10 engineers delivering robust applications for US clients in BFSI. ~<strong>9.5 years</strong> building scalable, user‑centric systems across large‑scale architectures. Trading enthusiast.</p>
-        <div class="badges">
-          <span class="chip">Java 21</span>
-          <span class="chip">Spring Boot</span>
-          <span class="chip">Maven</span>
-          <span class="chip">REST APIs</span>
-          <span class="chip">Microservices</span>
-          <span class="chip">Docker</span>
-          <span class="chip">Cloud (AWS/Azure)</span>
-          <span class="chip">React & Redux</span>
-          <span class="chip">Angular</span>
-          <span class="chip">MySQL (Advanced)</span>
-          <span class="chip">Git • CI/CD</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- SUMMARY -->
-    <section class="card">
-      <h2>Profile</h2>
-      <p>Software Engineer and Technical Lead with proven experience delivering high‑impact features, leading reviews, unblocking teams, and owning production readiness. Adept at full‑stack development, performance tuning, and secure, cloud‑ready deployments.</p>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section>
-      <h2>Experience</h2>
-      <div class="grid cols-2">
-        <article class="xp">
-          <div class="role">Senior Consultant — TCS, Mumbai</div>
-          <div class="meta">Jan 2023 – Present</div>
-          <ul>
-            <li>Technical Lead for US client programs in BFSI; mentoring 8–10 engineers.</li>
-            <li>Architecting services with <strong>Java 21, Spring Boot, Maven</strong>; containerizing with <strong>Docker</strong>.</li>
-            <li>Owning CI/CD pipelines, code reviews, and production stability; collaborating across time zones.</li>
-          </ul>
-        </article>
-
-        <article class="xp">
-          <div class="role">Team Lead — Capgemini Software, Mumbai</div>
-          <div class="meta">Aug 2021 – Dec 2022</div>
-          <ul>
-            <li>Built front‑end apps with <strong>React</strong>, <strong>Redux</strong>, and REST APIs; Git for version control.</li>
-            <li>Led and mentored developers; delivered solutions in the <strong>BFSI</strong> domain.</li>
-          </ul>
-        </article>
-
-        <article class="xp">
-          <div class="role">Team Lead — Newgen Software, Noida</div>
-          <div class="meta">Jul 2018 – Sep 2021</div>
-          <ul>
-            <li>Implemented Newgen products (iBPS, OmniDocs) per client needs.</li>
-            <li>Worked across <strong>JavaScript</strong>, <strong>MySQL (advanced)</strong>, <strong>Core Java</strong>, <strong>Angular</strong>.</li>
-            <li><span class="ok">Awards:</span> Rising Star, Excellence Award, High Five Award for US deliveries.</li>
-            <li>Certified NCIP I & II (Newgen certifications).</li>
-          </ul>
-        </article>
-
-        <article class="xp">
-          <div class="role">Software Engineer — Mphasis, Bengaluru</div>
-          <div class="meta">Feb 2016 – Jun 2018</div>
-          <ul>
-            <li>Front‑end developer for business process applications (Change/Supply/Incident Mgmt.).</li>
-            <li>Worked on <strong>AngularJS</strong> & <strong>Angular 4</strong>.</li>
-          </ul>
-        </article>
-
-        <article class="xp">
-          <div class="role">Software Engineer — Lift India, Noida</div>
-          <div class="meta">Jul 2015 – Jan 2016</div>
-          <ul>
-            <li>Design developer for ride‑sharing application.</li>
-            <li>Used Google Maps APIs; Android app design & development; end‑to‑end flow from ride offer to selection.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="card">
-      <h2>Core Skills</h2>
-      <div class="grid cols-3">
-        <div>
-          <div class="small">Back‑End</div>
-          <div class="badges">
-            <span class="chip">Java 21</span>
-            <span class="chip">Spring Boot</span>
-            <span class="chip">Maven</span>
-            <span class="chip">REST • JWT</span>
-            <span class="chip">Microservices</span>
-          </div>
-        </div>
-        <div>
-          <div class="small">Front‑End</div>
-          <div class="badges">
-            <span class="chip">React</span>
-            <span class="chip">Redux</span>
-            <span class="chip">Angular</span>
-            <span class="chip">TypeScript/JS</span>
-            <span class="chip">HTML • CSS</span>
-          </div>
-        </div>
-        <div>
-          <div class="small">DevOps & Data</div>
-          <div class="badges">
-            <span class="chip">Docker</span>
-            <span class="chip">Cloud (AWS/Azure)</span>
-            <span class="chip">Git • CI/CD</span>
-            <span class="chip">MySQL (Advanced)</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CERTS & AWARDS -->
-    <section class="grid cols-2">
-      <div class="card">
-        <h2>Licenses & Certifications</h2>
-        <div class="list">
-          <div class="item"><span class="dot"></span><div><strong>NCFM — Investment Analysis & Portfolio Management</strong> (2023) · NSE — NCFM‑00001385465</div></div>
-          <div class="item"><span class="dot"></span><div><strong>NCFM — Equity Derivatives: Beginner's Module</strong> (2023) · NSE — NCFM‑00001385465</div></div>
-          <div class="item"><span class="dot"></span><div><strong>Mutual Funds: Beginner's Module</strong> (2022) · NSE Academy — NCFM‑00001385465</div></div>
-          <div class="item"><span class="dot"></span><div><strong>Financial Markets: Beginner's Module</strong> (2022) · NSE Academy — NCFM‑00001385465</div></div>
-          <div class="item"><span class="dot"></span><div><strong>NCIP I & II</strong> — Newgen Product Certifications</div></div>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Honors & Awards</h2>
-        <div class="list">
-          <div class="item"><span class="dot"></span><div><strong>Appreciation Certificate</strong> — Newgen Software (2020)</div></div>
-          <div class="item"><span class="dot"></span><div><strong>High Five Award</strong> — Newgen Software (2020)</div></div>
-          <div class="item"><span class="dot"></span><div><strong>Rising Star</strong> — Newgen Software (2019)</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="card">
-      <h2>Education</h2>
-      <div class="list">
-        <div class="item"><span class="dot"></span><div><strong>B.Tech (Information Technology)</strong> — IEC College of Engg & Tech, Greater Noida — Dr. A.P.J. Abdul Kalam Technical University, U.P. — 68.56%</div></div>
-        <div class="item"><span class="dot"></span><div><strong>CBSE 12 (Non‑Medical Science)</strong> — 72%</div></div>
-        <div class="item"><span class="dot"></span><div><strong>CBSE 10</strong> — 71%</div></div>
-      </div>
-    </section>
-
-    <!-- INTERESTS -->
-    <section class="card">
-      <h2>Interests</h2>
-      <p>Intermediate in Trading Technical Analysis, Futures & Options. Enjoys building side projects, exploring cloud services, and performance tuning.</p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <div class="grid cols-3">
-        <div>
-          <div class="small">Email</div>
-          <a href="mailto:ravi.jain1201@gmail.com">ravi.jain1201@gmail.com</a>
-        </div>
-        <div>
-          <div class="small">Phone</div>
-          <a href="tel:+918459153078">+91 84591 53078</a>
-        </div>
-        <div>
-          <div class="small">Location</div>
-          <span>Mumbai, 410206</span>
-        </div>
-      </div>
-    </section>
+    <section id="hero" class="hero"></section>
+    <section id="profile" class="card"></section>
+    <section id="experience"></section>
+    <section id="skills" class="card"></section>
+    <section id="certifications" class="grid cols-2"></section>
+    <section id="education" class="card"></section>
+    <section id="interests" class="card"></section>
+    <section id="contact" class="card"></section>
 
     <footer>
-      © <span id="y"></span> Ravi Jain · Built with plain HTML & CSS
-      <div class="small">Tip: place <code>resume.pdf</code> next to this HTML file. Replace the inline SVG avatar with <code>profile.jpg</code> if you prefer.</div>
+      © <span id="year"></span> Ravi Jain · Built with HTML, CSS & JS
     </footer>
   </main>
 
-  <!-- JSON‑LD for richer search previews -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ravi Jain",
-    "jobTitle": "Technical Lead",
-    "email": "mailto:ravi.jain1201@gmail.com",
-    "telephone": "+918459153078",
-    "address": {"@type":"PostalAddress","addressLocality":"Mumbai","postalCode":"410206","addressCountry":"IN"},
-    "knowsAbout": ["Java 21","Spring Boot","Maven","Microservices","Docker","Cloud","React","Redux","Angular","MySQL"],
-    "url": "",
-    "sameAs": []
-  }
-  </script>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script src="script.js"></script>
 </body>
 </html>

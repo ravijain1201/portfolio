@@ -1,0 +1,83 @@
+{
+  "hero": {
+    "name": "Ravi Jain",
+    "title": "Technical Lead • Full-Stack / Java",
+    "location": "Mumbai, 410206",
+    "phone": "+91 84591 53078",
+    "email": "ravi.jain1201@gmail.com",
+    "summary": "Mentoring and leading teams of 8–10 engineers delivering robust applications for US clients in BFSI. ~9.5 years building scalable, user-centric systems across large-scale architectures. Trading enthusiast.",
+    "skills": [
+      "Java 21",
+      "Spring Boot",
+      "Maven",
+      "REST APIs",
+      "Microservices",
+      "Docker",
+      "Cloud (AWS/Azure)",
+      "React & Redux",
+      "Angular",
+      "MySQL (Advanced)",
+      "Git • CI/CD"
+    ],
+    "avatar": "profile_pic.png"
+  },
+  "profile": {
+    "text": "Software Engineer and Technical Lead with proven experience delivering high-impact features, leading reviews, unblocking teams, and owning production readiness. Adept at full-stack development, performance tuning, and secure, cloud-ready deployments."
+  },
+  "experience": [
+    {
+      "role": "Senior Consultant — TCS, Mumbai",
+      "meta": "Jan 2023 – Present",
+      "details": [
+        "Technical Lead for US client programs in BFSI; mentoring 8–10 engineers.",
+        "Architecting services with Java 21, Spring Boot, Maven; containerizing with Docker.",
+        "Owning CI/CD pipelines, code reviews, and production stability; collaborating across time zones."
+      ]
+    },
+    {
+      "role": "Team Lead — Capgemini Software, Mumbai",
+      "meta": "Aug 2021 – Dec 2022",
+      "details": [
+        "Built front-end apps with React, Redux, and REST APIs.",
+        "Led and mentored developers; delivered solutions in BFSI domain."
+      ]
+    },
+    {
+      "role": "Team Lead — Newgen Software, Noida",
+      "meta": "Jul 2018 – Sep 2021",
+      "details": [
+        "Implemented Newgen products (iBPS, OmniDocs).",
+        "Worked across JavaScript, MySQL (advanced), Core Java, Angular.",
+        "Awards: Rising Star, Excellence Award, High Five Award."
+      ]
+    }
+  ],
+  "skills": {
+    "backend": ["Java 21", "Spring Boot", "Maven", "REST • JWT", "Microservices"],
+    "frontend": ["React", "Redux", "Angular", "TypeScript/JS", "HTML • CSS"],
+    "devops": ["Docker", "Cloud (AWS/Azure)", "Git • CI/CD", "MySQL (Advanced)"]
+  },
+  "certifications": [
+    "NCFM — Investment Analysis & Portfolio Management (2023)",
+    "NCFM — Equity Derivatives: Beginner's Module (2023)",
+    "Mutual Funds: Beginner's Module (2022)",
+    "Financial Markets: Beginner's Module (2022)",
+    "NCIP I & II — Newgen Product Certifications"
+  ],
+  "awards": [
+    "Appreciation Certificate — Newgen Software (2020)",
+    "High Five Award — Newgen Software (2020)",
+    "Rising Star — Newgen Software (2019)"
+  ],
+  "education": [
+    "B.Tech (Information Technology) — IEC College, Greater Noida — 68.56%",
+    "CBSE 12 (Non-Medical Science) — 72%",
+    "CBSE 10 — 71%"
+  ],
+  "interests": "Intermediate in Trading Technical Analysis, Futures & Options. Enjoys building side projects, exploring cloud services, and performance tuning.",
+  "contact": {
+    "email": "ravi.jain1201@gmail.com",
+    "phone": "+91 84591 53078",
+    "location": "Mumbai, 410206"
+  }
+}
