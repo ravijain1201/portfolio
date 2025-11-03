@@ -47,6 +47,9 @@ h2{font-size:20px;margin:0 0 12px 0;letter-spacing:.3px}
 .grid.cols-3{grid-template-columns:repeat(3, 1fr)}
 @media (max-width:900px){.grid.cols-2,.grid.cols-3{grid-template-columns:1fr}}
 
+/* Prevent awkward breaks */
+.hero, .xp, .card { page-break-inside: avoid; }
+
 /* experience */
 .xp{display:grid;gap:6px;padding:14px;border-radius:14px;background:color-mix(in srgb, var(--panel) 70%, transparent);border:1px dashed color-mix(in srgb, var(--muted) 25%, transparent)}
 .xp .role{font-weight:700}
@@ -61,3 +64,181 @@ h2{font-size:20px;margin:0 0 12px 0;letter-spacing:.3px}
 footer{margin:36px 0 24px;color:var(--muted);text-align:center}
 .small{font-size:12px;color:var(--muted)}
 .ok{color:var(--ok);font-weight:700}
+
+/* Print styles */
+@media print {
+  @page { margin: 0.75in; size: A4; }
+  
+  body { 
+    background: white !important; 
+    color: #1a1a1a !important; 
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+  
+  .container { 
+    max-width: none !important; 
+    padding: 0 !important; 
+    margin: 0 !important;
+  }
+  
+  /* Hero section */
+  .hero { 
+    display: grid !important;
+    grid-template-columns: 140px 1fr !important;
+    gap: 20px !important;
+    margin-bottom: 25px !important;
+    page-break-inside: avoid !important;
+  }
+  
+  .avatar { 
+    width: 140px !important;
+    height: 140px !important;
+    border: 2px solid #ddd !important;
+  }
+  
+  h1 { 
+    font-size: 24px !important;
+    margin: 0 0 8px 0 !important;
+    color: #1a1a1a !important;
+  }
+  
+  .subtitle { 
+    font-size: 11px !important;
+    color: #666 !important;
+    margin: 4px 0 !important;
+  }
+  
+  /* Sections */
+  section { 
+    margin-bottom: 20px !important;
+    page-break-inside: avoid !important;
+  }
+  
+  .card { 
+    background: white !important;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    margin-bottom: 15px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+  }
+  
+  h2 { 
+    font-size: 16px !important;
+    margin: 0 0 12px 0 !important;
+    color: #1a1a1a !important;
+    border-bottom: 2px solid #f0f0f0 !important;
+    padding-bottom: 4px !important;
+  }
+  
+  /* Grid layouts */
+  .grid.cols-2 { 
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+  }
+  
+  .grid.cols-3 { 
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 12px !important;
+  }
+  
+  /* Experience cards */
+  .xp { 
+    background: #fafafa !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 6px !important;
+    padding: 12px !important;
+    page-break-inside: avoid !important;
+  }
+  
+  .xp .role { 
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    color: #1a1a1a !important;
+  }
+  
+  .xp .meta { 
+    font-size: 10px !important;
+    color: #666 !important;
+    margin: 2px 0 6px 0 !important;
+  }
+  
+  .xp ul { 
+    margin: 6px 0 0 16px !important;
+    font-size: 11px !important;
+  }
+  
+  .xp li { 
+    margin-bottom: 2px !important;
+  }
+  
+  /* Skills and badges */
+  .badges { 
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    margin-top: 8px !important;
+  }
+  
+  .chip { 
+    background: #f5f5f5 !important;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+    padding: 4px 8px !important;
+    border-radius: 12px !important;
+    font-size: 10px !important;
+    font-weight: 500 !important;
+  }
+  
+  .small { 
+    font-size: 10px !important;
+    color: #666 !important;
+    font-weight: 600 !important;
+    margin-bottom: 4px !important;
+  }
+  
+  /* Links */
+  a { 
+    color: #0066cc !important;
+    text-decoration: none !important;
+  }
+  
+  /* Lists */
+  ul { 
+    margin: 8px 0 !important;
+    padding-left: 16px !important;
+  }
+  
+  li { 
+    margin-bottom: 3px !important;
+    font-size: 11px !important;
+  }
+  
+  /* Footer */
+  footer { 
+    margin-top: 20px !important;
+    padding-top: 15px !important;
+    border-top: 1px solid #e5e5e5 !important;
+    text-align: center !important;
+    font-size: 10px !important;
+    color: #666 !important;
+  }
+  
+  /* Page breaks */
+  #experience { page-break-before: auto !important; }
+  #certifications { page-break-before: avoid !important; }
+  
+  /* Remove shadows and effects */
+  .brand .dot, .list .dot { 
+    box-shadow: none !important;
+    background: #666 !important;
+  }
+  
+  * { 
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+}

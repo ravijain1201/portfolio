@@ -114,3 +114,12 @@ async function loadPortfolio() {
 }
 
 document.addEventListener("DOMContentLoaded", loadPortfolio);
+
+// --- PDF Generation ---
+function generatePDF() {
+  document.querySelector('header').style.display = 'none';
+  window.print();
+  setTimeout(() => {
+    document.querySelector('header').style.display = '';
+  }, 1000);
+}
